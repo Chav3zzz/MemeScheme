@@ -1,9 +1,17 @@
-body, html {
-  cursor: url(https://chav3zzz.github.io/pepefrog.png), pointer;
+canvas {
   height: 100%;
+  background: pink;
+  padding: 0;
+  margin: auto;
+  display: block;
+  margin-top: 100px;
+  cursor: none;
 }
 
-/*body, html {
-  cursor: url(http://bringerp.free.fr/Files/RotMG/cursor.gif), pointer;
-  height: 100%;
-}*/
+
+
+
+/*width: 760px;
+height: 600px;*/
+
+/*cursor: url(https://chav3zzz.github.io/pepefrog.png), default;*/
