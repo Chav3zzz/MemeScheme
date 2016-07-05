@@ -7,10 +7,10 @@
   <script   src="https://code.jquery.com/jquery-3.0.0.js"   integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo="   crossorigin="anonymous"></script>
 </head>
 <body>
-  <canvas id="memeCanvas" onclick="playerImage();" width="640" height="505"></canvas>
+  <canvas id="memeCanvas" onKeyDown="if(event.keyCode==13) {playerImage();}" width="640" height="505"></canvas>
 
 
-
+<!-- onclick="playerImage();"  -->
 
 
   <script src="game.js"></script>
