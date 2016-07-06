@@ -7,7 +7,7 @@ var enemyMeme = new Image();
 
 // Image gets created inside of the canvas
 function playerImage() {
-    gameImage.src = "pepeby45.png";
+    gameImage.src = "sadpepe50.png";
     memeCanvas.getContext("2d").drawImage(gameImage, Math.random() * 100, Math.random() * 100);
     memeCanvas.addEventListener("mousemove", drawPlayer);
     setInterval(redrawMeme, 7);
@@ -25,11 +25,12 @@ function redrawMeme() {
     enemyY = enemyY + 1;    //increase enemyY variable by one pixel. If enemyY is 10, then enemyY + 1 is 11, etc.
 
     enemyMeme.src = "bob100.png";
-    gameImage.src = "pepeby45.png";
+    gameImage.src = "sadpepe50.png";
 
     memeCanvas.width = 640;     //this erases the contents of the canvas
     memeCanvas.getContext("2d").drawImage(gameImage, playerPicX, playerPicY);
     memeCanvas.getContext("2d").drawImage(enemyMeme, 250, enemyY);
+    memeCanvas.getContext("2d").drawImage(enemyMeme, 100, enemyY);
 }
 
 
