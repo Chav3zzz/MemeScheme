@@ -1,6 +1,6 @@
 canvas {
   height: 100%;
-  background: pink;
+  background-image: url("http://wallpapercave.com/wp/pEeUsp1.jpg");
   padding: 0;
   margin: auto;
   display: block;
@@ -8,7 +8,10 @@ canvas {
   cursor: none;
 }
 
-
+body {
+  background-image: url("http://pa1.narvii.com/5938/0afc970ac78facfa7da0360e289e1946eac5541e_hq.gif");
+  background-size: cover;
+}
 
 
 /*width: 760px;
