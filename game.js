@@ -28,8 +28,8 @@ function drawPlayer(mouseEvent) {
 }
 
 
-
-var canvas = document.getElementById("memeCanvas");
+// Changes the text on the canvas
+  var canvas = document.getElementById("memeCanvas");
   var context = canvas.getContext("2d");
   context.fillStyle = "lime";
   context.font = "bold 50px Arial";
