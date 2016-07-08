@@ -8,6 +8,7 @@ var memeImage = new Image();
 var enemyMeme = new Image();
 var timeLived = 0;
 var ACTIVE = false;
+var gameOver = false;
 
 
 // Image gets created inside of the canvas
@@ -78,6 +79,7 @@ function redrawMeme() {
     currentEnemyNumber = currentEnemyNumber + 1;
     }
     timeLived = timeLived + 1;
+    if(!gameOver) $("#score").html(timeLived)
   }
 
   // Restarts the game when lost
@@ -88,12 +90,13 @@ function redrawMeme() {
   }
 
   function lose() {
+    gameOver = true;
     var canvas = document.getElementById("memeCanvas");
     var context = canvas.getContext("2d");
       memeCanvas.width  = 800;
       context.fillStyle = "#00FFFF";
       context.font      = "bold 50px Arial";
-      context.fillText("lol you're loser. memes: " + timeLived, 70, 200);
+      context.fillText("lol you're loser", 220, 250);
       ACTIVE            = false;
       restart();
   }

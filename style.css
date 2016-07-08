@@ -3,9 +3,8 @@ canvas {
   background-image: url("http://www.ideafixa.com/wp-content/uploads/2013/05/animated-gifs-of-fighting-game-backgrounds-18.gif");
   background-size: cover;
   padding: 0;
-  margin: auto;
+  margin: 0 auto;
   display: block;
-  margin-top: 100px;
   cursor: none;
 }
 
@@ -38,4 +37,13 @@ span {
   font-family: Arial;
   font-size: 13px;
   font-weight: bold;
+}
+
+#score {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 50px;
+  position: relative;
+  top: 48px;
+  color: lime;
 }
