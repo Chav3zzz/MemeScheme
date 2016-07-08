@@ -14,8 +14,28 @@ body {
   background-size: cover;
 }
 
+button {
+  background-color: red;
+  border-radius: 400px;
+  width: 130px;
+  height: 100px;
+  margin: 25px auto;
+  display: block;
+  background-image: url("button70.png");
+  background-size: cover;
+  border: none;
+  position: relative;
+  /*color: white;
+  font-family: Arial;
+  font-size: 15px;
+  top: -10px;*/
+}
 
-/*width: 760px;
-height: 600px;*/
-
-/*cursor: url(https://chav3zzz.github.io/pepefrog.png), default;*/
+span {
+  position: relative;
+  top: -20px;
+  color: white;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: bold;
+}
