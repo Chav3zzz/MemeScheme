@@ -4,20 +4,39 @@ var memeXPositions = [];
 var playerPicX = 370;
 var playerPicY = 470;
 var gameImage = new Image();
-var memeImage = new Image();
 var enemyMeme = new Image();
 var timeLived = 0;
 var ACTIVE = false;
 var gameOver = false;
 
 
+
+
+// Starts the game by pressing the "enter key"
+window.addEventListener('keydown', start);
+function start(eKey){
+  if(eKey.keyCode == 13 ){
+    ACTIVE = true;
+    playerImage();
+    memeCanvas.addEventListener("keydown", drawPlayer);
+    window.removeEventListener('keydown', start);
+  }
+}
+
+
 // Image gets created inside of the canvas
 function playerImage() {
+    gameImage = new Image();
+    enemyMeme = new Image();
+    enemyMeme.src = "bob100.png"
+    gameImage.src = "sadpepe40.png";
+
+
     gameImage.src = "sadpepe40.png";
     memeCanvas.getContext("2d").drawImage(gameImage, Math.random() * 100, Math.random() * 100);
     memeCanvas.addEventListener("mousemove", drawPlayer);
     setInterval(redrawMeme, 1);
-    setInterval(redrawMeme, 7);
+    setInterval(redrawMeme, 5);
 
 }
 
@@ -89,38 +108,29 @@ function redrawMeme() {
       timeLived = 0;
   }
 
+// This function gets called when the player hits an enemy
   function lose() {
     gameOver = true;
     var canvas = document.getElementById("memeCanvas");
     var context = canvas.getContext("2d");
       memeCanvas.width  = 800;
-      context.fillStyle = "#00FFFF";
-      context.font      = "bold 50px Arial";
-      context.fillText("lol you're loser", 220, 250);
+      context.fillStyle = "#60FCCD";
+      context.font      = "bold 70px Arial";
+      context.fillText("lol you're a loser", 130, 250);
       ACTIVE            = false;
       restart();
   }
 
 
-// Starts the game by pressing the "enter key"
-window.addEventListener('keydown', start);
-function start(eKey){
-  if(eKey.keyCode == 13 ){
-    ACTIVE = true;
-    playerImage();
-    memeCanvas.width = 800; //clears the canvas
-    memeCanvas.addEventListener("keydown", drawPlayer);
-    window.removeEventListener('keydown', start);
-  }
-}
-
-
 // Changes the text on the canvas
-  var canvas = document.getElementById("memeCanvas");
-  var context = canvas.getContext("2d");
-    context.fillStyle = "lime";
-    context.font = "bold 70px Arial";
-    context.fillText("press enter to start", 90, 300);
+    var canvas = document.getElementById("memeCanvas");
+    var context = canvas.getContext("2d");
+    var intro = canvas.getContext("2d");
+        context.fillStyle = "#01B500";
+      context.font = "bold 70px Arial";
+      context.fillText("press enter to start", 90, 250);
+      intro.font = "bold 30px Arial";
+      context.fillText("escape the memes with your mouse", 145, 170);
 
 
   $('button').on('click',function () { location.reload()})
