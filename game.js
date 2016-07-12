@@ -30,13 +30,9 @@ function playerImage() {
     enemyMeme = new Image();
     enemyMeme.src = "bob100.png"
     gameImage.src = "sadpepe40.png";
-
-
-    gameImage.src = "sadpepe40.png";
-    memeCanvas.getContext("2d").drawImage(gameImage, Math.random() * 100, Math.random() * 100);
     memeCanvas.addEventListener("mousemove", drawPlayer);
     setInterval(redrawMeme, 1);
-    setInterval(redrawMeme, 5);
+    setInterval(redrawMeme, 5.5);
 
 }
 
@@ -58,7 +54,7 @@ function redrawMeme() {
 
 
   //adds infinite memes to the array
-  if (Math.random() < 3/70) {
+  if (Math.random() < 2/70) {
       memeYPositions.push(0);
       memeXPositions.push(Math.random() * 800);
 
@@ -114,7 +110,7 @@ function redrawMeme() {
     var canvas = document.getElementById("memeCanvas");
     var context = canvas.getContext("2d");
       memeCanvas.width  = 800;
-      context.fillStyle = "#60FCCD";
+      context.fillStyle = "#01B500";
       context.font      = "bold 70px Arial";
       context.fillText("lol you're a loser", 130, 250);
       ACTIVE            = false;
@@ -126,7 +122,7 @@ function redrawMeme() {
     var canvas = document.getElementById("memeCanvas");
     var context = canvas.getContext("2d");
     var intro = canvas.getContext("2d");
-        context.fillStyle = "#01B500";
+      context.fillStyle = "#01B500";
       context.font = "bold 70px Arial";
       context.fillText("press enter to start", 90, 250);
       intro.font = "bold 30px Arial";

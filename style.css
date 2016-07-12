@@ -1,15 +1,17 @@
 canvas {
   height: 100%;
-  background-image: url("http://www.ideafixa.com/wp-content/uploads/2013/05/animated-gifs-of-fighting-game-backgrounds-18.gif");
+  /*background-image: url("http://www.ideafixa.com/wp-content/uploads/2013/05/animated-gifs-of-fighting-game-backgrounds-18.gif");*/
   background-size: cover;
   padding: 0;
   margin: 0 auto;
   display: block;
   cursor: none;
+  border: #01B500 5px solid;
 }
 
 body {
-  background-image: url("http://pa1.narvii.com/5938/0afc970ac78facfa7da0360e289e1946eac5541e_hq.gif");
+  /*background-image: url("http://pa1.narvii.com/5938/0afc970ac78facfa7da0360e289e1946eac5541e_hq.gif");*/
+  background-image: url("http://www.ideafixa.com/wp-content/uploads/2013/05/animated-gifs-of-fighting-game-backgrounds-18.gif");
   background-size: cover;
   margin-top: -40px;
 }
@@ -45,6 +47,6 @@ span {
   text-align: center;
   font-size: 50px;
   position: relative;
-  top: 48px;
+  top: 60px;
   color: #01B500;
 }
