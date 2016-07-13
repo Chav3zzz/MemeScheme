@@ -109,10 +109,13 @@ function redrawMeme() {
     gameOver = true;
     var canvas = document.getElementById("memeCanvas");
     var context = canvas.getContext("2d");
+    var restartPage = canvas.getContext("2d");
       memeCanvas.width  = 800;
       context.fillStyle = "#01B500";
       context.font      = "bold 70px Arial";
-      context.fillText("lol you're a loser", 130, 250);
+      context.fillText("lol you're a loser!!!", 100, 250);
+      restartPage.font  = "bold 60px Arial";
+      restartPage.fillText("spacebar to restart", 140, 350);
       ACTIVE            = false;
       restart();
   }
@@ -124,9 +127,17 @@ function redrawMeme() {
     var intro = canvas.getContext("2d");
       context.fillStyle = "#01B500";
       context.font = "bold 70px Arial";
-      context.fillText("press enter to start", 90, 250);
+      context.fillText("press enter to start", 90, 330);
       intro.font = "bold 30px Arial";
-      context.fillText("escape the memes with your mouse", 145, 170);
+      context.fillText("escape the memes with your mouse", 145, 250);
 
 
-  $('button').on('click',function () { location.reload()})
+  // $('button').on('click',function () { location.reload()})
+
+
+  window.addEventListener('keydown', spaceBar);
+  function spaceBar(bar){
+    if(bar.keyCode == 32 ){
+      location.reload ();
+    }
+  }

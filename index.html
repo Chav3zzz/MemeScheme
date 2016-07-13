@@ -10,10 +10,10 @@
 
 
   <div id="score">0</div>
-  <canvas id="memeCanvas" onKeyDown="if(event.keyCode==13) {playerImage();}" width="800" height="600"></canvas>
+  <canvas id="memeCanvas" onKeyDown="if(event.keyCode==13) {playerImage();}" onSpace="if(event.keyCode==32) {playerImage();}" width="800" height="600"></canvas>
 
 
-  <button><span>RESTART</span></button>
+  
 
 
   <script src="game.js"></script>
