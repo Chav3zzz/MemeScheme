@@ -1,6 +1,5 @@
 # MemeScheme
-Escape the memes without being hit! 
-Swagoverdose.com
+Escape the memes without being hit! Play at Swagoverdose.com
 
 # Technologies
 - Canvas
