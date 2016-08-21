@@ -32,7 +32,7 @@ function playerImage() {
     gameImage.src = "sadpepe40.png";
     memeCanvas.addEventListener("mousemove", drawPlayer);
     setInterval(redrawMeme, 1);
-    setInterval(redrawMeme, 5.5);
+    setInterval(redrawMeme, 0);
 
 }
 
@@ -111,7 +111,7 @@ function redrawMeme() {
     var context = canvas.getContext("2d");
     var restartPage = canvas.getContext("2d");
       memeCanvas.width  = 800;
-      context.fillStyle = "#01B500";
+      context.fillStyle = "white";
       context.font      = "bold 70px Arial";
       context.fillText("lol you're a loser!!!", 100, 250);
       restartPage.font  = "bold 60px Arial";
@@ -125,7 +125,7 @@ function redrawMeme() {
     var canvas = document.getElementById("memeCanvas");
     var context = canvas.getContext("2d");
     var intro = canvas.getContext("2d");
-      context.fillStyle = "#01B500";
+      context.fillStyle = "white";
       context.font = "bold 70px Arial";
       context.fillText("press enter to start", 90, 330);
       intro.font = "bold 30px Arial";
