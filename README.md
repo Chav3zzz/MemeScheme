@@ -1,5 +1,5 @@
 # MemeScheme
-Escape the memes without being hit! Play at <a href=Swagoverdose.com></a>
+Escape the memes without being hit! Play at An [example](http://swagoverdose.com/ "Title")
 
 # Technologies
 - Canvas
