@@ -3,8 +3,9 @@ Escape the memes with your mouse without being hit! Play [here.](http://swagover
 
 # Technologies Used
 
-| Development   |
-| JavaScript/jQuery |
+| Development   | 
+| ------------- |
+| JavaScript/jQuery | 
 | Canvas        |
 | HTML          |
 | CSS           |
